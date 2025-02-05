@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Examen SMACSS JS</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Sesame</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Nunito+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="scss/main.scss" />
@@ -17,119 +17,63 @@
     ></script>
   </head>
   <body>
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1>Little Sesame</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+    <header class="header">
+      <h1>Little Sesame</h1>
+    </header>
 
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Our Flavors</h2>
-          </div>
+    <section class="flavors">
+      <h2>Our Flavors</h2>
+      <div class="flavors-container">
+        <div class="flavor-card">
+          <img src="img/caramelized-onions.png" alt="Caramelized Onions" />
+          <h3>Camaramelized Onions</h3>
+          <p>Sweet & sour onions slowly cooked with pomegranate molasses</p>
+          <i class="fa-solid fa-circle-info"></i>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <div>
-              <img
-                src="img/caramelized-onions.png"
-                alt="Caramelized Onions Hummus Pack"
-              />
-              <h3>Camaramelized Onions</h3>
-              <p>Sweet & sour onions slowly cooked with pomegranate molasses</p>
-              <i class="fa-solid fa-circle-info"></i>
-              <p>
-                For a rich, deep flavor that blends perfectly into our creamy
-                hummus, creating a sweet, tangy, and utterly satisfying bite.
-              </p>
-            </div>
-          </div>
-          <div class="col-4">
-            <div>
-              <img
-                src="img/herby-jalapeno.png"
-                alt="Herby Jalapeño Hummus Pack"
-              />
-              <h3>Herby Jalapeño</h3>
-              <p>
-                Super fresh vibrant blend of jalapeños & herbs. A little spicy
-              </p>
-              <i class="fa-solid fa-circle-info"></i>
-              <p>
-                A little spicy, this hummus brings a bold, zesty kick with a
-                smooth and creamy texture, perfect for dipping or spreading.
-              </p>
-            </div>
-          </div>
-          <div class="col-4">
-            <div>
-              <img
-                src="img/smooth-classic.png"
-                alt="Smooth Classic Hummus Pack"
-              />
-              <h3>Smooth Classic</h3>
-              <p>
-                Creamy tahini & fresh lemon are the star of our super smooth
-                original
-              </p>
-              <i class="fa-solid fa-circle-info"></i>
-              <p>
-                Delivering a perfectly balanced, velvety texture with a hint of
-                garlic for a timeless, delicious taste.
-              </p>
-            </div>
-          </div>
+        <div class="flavor-card">
+          <img src="img/herby-jalapeno.png" alt="Herby Jalapeño" />
+          <h3>Herby Jalapeño</h3>
+          <p>Super fresh vibrant blend of jalapeños & herbs. A little spicy</p>
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="flavor-card">
+          <img src="img/smooth-classic.png" alt="Smooth Classic" />
+          <h3>Smooth Classic</h3>
+          <p>
+            Creamy tahini & fresh lemon are the star of our super smooth
+            original
+          </p>
+          <i class="fa-solid fa-circle-info"></i>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>It’s All About The Ride...</h2>
-          </div>
+    <section class="about">
+      <h2>It’s All About The Ride...</h2>
+      <div class="icons-container">
+        <div class="icon">
+          <img src="img/organic.png" alt="Certified Organic" />
+          <h3>Certified Organic</h3>
         </div>
-        <div class="row">
-          <div class="col-2 offset-1">
-            <div>
-              <img src="img/organic.png" alt="Plant drawing" />
-              <h3>Certified Organic</h3>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <img src="img/energy.png" alt="Smiling bean drawing" />
-              <h3>Big Bean Energy</h3>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <img src="img/climate.png" alt="Planet earth drawing" />
-              <h3>Climate Friendly</h3>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <img src="img/community.png" alt="Victory fingers sign drawing" />
-              <h3>Community First</h3>
-            </div>
-          </div>
-          <div class="col-2">
-            <div>
-              <img src="img/vibes.png" alt="Hummus pack drawing" />
-              <h3>Sunny Vibes</h3>
-            </div>
-          </div>
+        <div class="icon">
+          <img src="img/energy.png" alt="Big Bean Energy" />
+          <h3>Big Bean Energy</h3>
+        </div>
+        <div class="icon">
+          <img src="img/climate.png" alt="Climate Friendly" />
+          <h3>Climate Friendly</h3>
+        </div>
+        <div class="icon">
+          <img src="img/community.png" alt="Community First" />
+          <h3>Community First</h3>
+        </div>
+        <div class="icon">
+          <img src="img/vibes.png" alt="Sunny Vibes" />
+          <h3>Sunny Vibes</h3>
         </div>
       </div>
-    </div>
+    </section>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

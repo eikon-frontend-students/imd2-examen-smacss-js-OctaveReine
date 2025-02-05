@@ -2,9 +2,8 @@
   --dark-blue: #005564;
   --light-blue: #c0d9d9;
   --green: #a0d187;
-  --red: #cf9697;
-  --yellow: #fce757;
-  --white: #fff;
+  --text-dark: #123456;
+  --text-light: #789abc;
 }
 
 * {
@@ -13,12 +12,118 @@
   padding: 0;
 }
 
-a {
-  color: inherit;
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text-dark);
 }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
+h1,
+h2 {
+  font-family: "Francois One", sans-serif;
+  color: var(--dark-blue);
+}
+
+h3,
+p {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.header {
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.flavors {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .flavors-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .flavor-card {
+    background-color: var(--green);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 280px;
+
+    img {
+      width: 150px;
+      margin: 0 auto 10px;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    i {
+      font-size: 1.2rem;
+      color: var(--dark-blue);
+    }
+  }
+}
+
+.about {
+  background-color: var(--light-blue);
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: auto;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+
+    img {
+      width: 50px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
 }
